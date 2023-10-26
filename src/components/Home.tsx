@@ -15,7 +15,9 @@ const Home = () => {
     ]);
 
     const handleDelete = (id) => {
-        
+        // Stores the filtered array temporarily - Returns false if the blog's ID is in the array so we can remove it.
+        const newBlogs = blogs.filter(blog => blog.id !== id);
+        setBlogs(newBlogs);
     }
 
     return (
