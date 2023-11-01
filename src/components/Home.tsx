@@ -1,7 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import BlogList from "./BlogList";
 
 const Home = () => {
+
+    useEffect(()=>{
+        console.log("test asdfjkasdlfj")
+    })
 
     const [blogs, setBlogs] = useState([
         { title: 'My New Website', body: 'lorem ipsum...', author: 'Mario', id: 1 },
