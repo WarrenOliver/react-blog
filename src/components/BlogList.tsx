@@ -1,7 +1,5 @@
 const BlogList = ({ blogs, title }) => {
 
-
-
   return (
     <div className="blog-list">
       <h1>{title}</h1>
