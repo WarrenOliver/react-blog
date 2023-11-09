@@ -3,6 +3,7 @@ import useFetch from "./useFetch";
 import BlogList from "./BlogList";
 
 const Home = () => {
+  // deconstructing variables I want to have fetched data assigned to.
     const { data: blogs, isPending, error} = useFetch('http://localhost:8000/blogs')
 
   return (
