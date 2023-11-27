@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import Create from './components/create';
+import Create from './components/Create';
 import PageNotFound from './components/PageNotFound';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SingleBlogPage from './components/SingleBlogPage';
