@@ -29,7 +29,7 @@ const SingleBlogPage = () => {
                         { blog.body }
                     </div>
                     <br /><br />
-                    <button className="delete-button" onClick={() => handleDelete(blog)}>>>> blog.delete()</button>
+                    <button className="delete-button" onClick={() => handleDelete(blog)}>&gt;&gt;&gt; blog.delete()</button>
 
                 </article>
             )}
