@@ -8,7 +8,7 @@ const Create = () => {
     const [isPending, setIsPending] = useState(false);
     const navigate = useNavigate();
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: { preventDefault: () => void; }) => {
         e.preventDefault();
         const blog = {title, body, author};
         setIsPending(true);

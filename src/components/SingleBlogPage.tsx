@@ -7,7 +7,7 @@ const SingleBlogPage = () => {
     const { data: blog, isPending, error } = useFetch('http://localhost:8000/blogs/'+ id)
     const navigate = useNavigate();
 
-    const handleDelete = (data) => {
+    const handleDelete = () => {
         fetch('http://localhost:8000/blogs/' + id, {
             method: "DELETE"
         }).then(() => {
