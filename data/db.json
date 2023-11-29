@@ -1,12 +1,6 @@
 {
   "blogs": [
     {
-      "id": 1,
-      "title": "The Evolution of Web Design",
-      "body": "Web design has evolved tremendously over the years, transitioning from simple, text-based pages to complex, interactive experiences. This evolution reflects the changes in technology and user expectations, leading to more visually appealing and user-friendly designs.",
-      "author": "Jack"
-    },
-    {
       "id": 2,
       "title": "The Importance of QA in Software Development",
       "body": "Quality Assurance (QA) plays a crucial role in software development, ensuring that products meet certain standards of quality. It involves rigorous testing and review processes to identify and fix bugs, leading to more reliable and user-friendly software.",
@@ -65,12 +59,6 @@
       "title": "Adapting to Remote Work Culture",
       "body": "The recent global events have pushed many organizations to adopt remote working. This shift requires adapting to new technologies and communication methods, ensuring that teams remain productive and connected despite the physical distance.",
       "author": "Clay Alexander"
-    },
-    {
-      "id": 12,
-      "title": "The Significance of Cybersecurity in Today's World",
-      "body": "With an increasing amount of data being shared online, the importance of cybersecurity cannot be overstated. It is essential for protecting sensitive information from cyber threats, ensuring the safety and privacy of users in the digital space.",
-      "author": "Kostadin Kostadinov"
     },
     {
       "id": 13,

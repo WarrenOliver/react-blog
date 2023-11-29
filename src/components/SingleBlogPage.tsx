@@ -8,9 +8,8 @@ const SingleBlogPage = () => {
     const navigate = useNavigate();
 
     const handleDelete = (data) => {
-        fetch('http://localhost:8000/blogs' + id, {
-            method: "DELETE",
-            headers: {"Content-Type": "application/json"}
+        fetch('http://localhost:8000/blogs/' + id, {
+            method: "DELETE"
         }).then(() => {
             console.log('Blog Deleted')
             navigate('/')
@@ -30,7 +29,7 @@ const SingleBlogPage = () => {
                         { blog.body }
                     </div>
                     <br /><br />
-                    <button className="delete-button" onClick={() => handleDelete(blog)}>Delete this blog</button>
+                    <button className="delete-button" onClick={() => handleDelete(blog)}>>>> blog.delete()</button>
 
                 </article>
             )}
