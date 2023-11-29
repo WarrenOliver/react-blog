@@ -6,6 +6,6 @@ import PageNotFound from './components/PageNotFound';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import SingleBlogPage from './components/SingleBlogPage';
 function App() {
-    return (_jsx(Router, { children: _jsxs("div", { className: 'App', children: [_jsx(Navbar, {}), _jsx("div", { className: "content", children: _jsxs(Routes, { children: [_jsx(Route, { path: "/", element: _jsx(Home, {}) }), _jsx(Route, { path: "/create", element: _jsx(Create, {}) }), _jsx(Route, { path: "/blogs", element: _jsx(Home, {}) }), _jsx(Route, { path: "/blogs/:id", element: _jsx(SingleBlogPage, {}) }), _jsx(Route, { path: "*", element: _jsx(PageNotFound, {}) })] }) })] }) }));
+    return (_jsx(Router, { children: _jsxs("div", { className: 'App', children: [_jsx(Navbar, {}), _jsx("div", { className: "content", children: _jsxs(Routes, { children: [_jsx(Route, { path: "/", element: _jsx(Home, {}) }), _jsx(Route, { path: "/create", element: _jsx(Create, {}) }), _jsx(Route, { path: "/blogs", element: _jsx(Home, {}) }), _jsx(Route, { path: "/react-blog", element: _jsx(Home, {}) }), _jsx(Route, { path: "/blogs/:id", element: _jsx(SingleBlogPage, {}) }), _jsx(Route, { path: "*", element: _jsx(PageNotFound, {}) })] }) })] }) }));
 }
 export default App;
