@@ -13,11 +13,11 @@ interface Blog {
 const SingleBlogPage = () => {
     // Using 'useParams' with TypeScript
     const { id } = useParams<{ id: string }>();
-    const { data: blog, isPending, error } = useFetch<Blog>('http://localhost:8000/blogs/' + id);
+    const { data: blog, isPending, error } = useFetch<Blog>('http://127.0.0.1:5000/api/blogs/' + id);
     const navigate = useNavigate();
 
     const handleDelete = () => {
-        fetch('http://localhost:8000/blogs/' + id, {
+        fetch('http://127.0.0.1:5000/api/blogs/' + id, {
             method: "DELETE"
         }).then(() => {
             console.log('Blog Deleted');

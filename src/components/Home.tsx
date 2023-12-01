@@ -4,7 +4,7 @@ import { Blog } from './Types';
 
 const Home = () => {
     // Use the Blog type with useFetch
-    const { data: blogs, isPending, error } = useFetch<Blog[]>('http://localhost:8000/blogs');
+    const { data: blogs, isPending, error } = useFetch<Blog[]>('http://127.0.0.1:5000/api/blogs');
 
     return (
         <>
