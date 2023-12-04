@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const Create = () => {
     const [title, setTitle] = useState("");
     const [body, setBody] = useState("");
-    const [author, setAuthor] = useState("mario");
+    const [author, setAuthor] = useState("Emma Clarkson");
     const [isPending, setIsPending] = useState(false);
     const navigate = useNavigate();
 
@@ -13,7 +13,7 @@ const Create = () => {
         const blog = {title, body, author};
         setIsPending(true);
 
-        fetch('http://127.0.0.1:5000/api/blogs', {
+        fetch('https://pure-depths-42732-665f9d14be7f.herokuapp.com/api/blogs', {
             method: "POST",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(blog)
@@ -51,9 +51,15 @@ const Create = () => {
                     value={author}
                     onChange={(e) => setAuthor(e.target.value)}
                 >
-                    <option value="mario">mario</option>
-                    <option value="luigi">luigi</option>
-                    <option value="yoshi">yoshi</option>
+                    <option value="Emma Clarkson">Emma Clarkson</option>
+                    <option value="Liam Nguyen">Liam Nguyen</option>
+                    <option value="Aria Patel">Aria Patel</option>
+                    <option value="Noah Kim">Noah Kim</option>
+                    <option value="Sophia Martinez">Noah Kim</option>
+                    <option value="Oliver Smith">Oliver Smith</option>
+                    <option value="Mia Johnson">Mia Johnson</option>
+
+                    
                 </select>
                 {!isPending && <button>&gt;&gt;&gt; blog.create()</button>}
                 {isPending && <button>Creating new blog...</button>}

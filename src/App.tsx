@@ -14,8 +14,8 @@ function App() {
           <Routes>
             {/* Define the route and its corresponding component */}
             <Route path="/" element={<Home />} />
-            <Route path="/create" element={<Create />} />
-            <Route path="/blogs" element={<Home />} />
+            <Route path="/react-blog/create" element={<Create />} />
+            <Route path="/react-blog/blogs" element={<Home />} />
             <Route path="/react-blog" element={<Home />} />
             <Route path="/blogs/:id" element={<SingleBlogPage />} />
             <Route path="*" element={<PageNotFound />} />
