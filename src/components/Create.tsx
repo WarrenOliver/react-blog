@@ -55,7 +55,7 @@ const Create = () => {
                     <option value="Liam Nguyen">Liam Nguyen</option>
                     <option value="Aria Patel">Aria Patel</option>
                     <option value="Noah Kim">Noah Kim</option>
-                    <option value="Sophia Martinez">Noah Kim</option>
+                    <option value="Sophia Martinez">Sophia Martinez</option>
                     <option value="Oliver Smith">Oliver Smith</option>
                     <option value="Mia Johnson">Mia Johnson</option>
 
